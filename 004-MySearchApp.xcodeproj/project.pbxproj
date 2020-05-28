@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		8D19781B247E49B3002396A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D19781A247E49B3002396A8 /* AppDelegate.swift */; };
 		8D19781D247E49B3002396A8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D19781C247E49B3002396A8 /* SceneDelegate.swift */; };
-		8D19781F247E49B3002396A8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D19781E247E49B3002396A8 /* ViewController.swift */; };
 		8D197822247E49B3002396A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D197820247E49B3002396A8 /* Main.storyboard */; };
 		8D197824247E49B5002396A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D197823247E49B5002396A8 /* Assets.xcassets */; };
 		8D197827247E49B5002396A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D197825247E49B5002396A8 /* LaunchScreen.storyboard */; };
+		8D19782F247E5EBB002396A8 /* ItemSearchResultSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D19782E247E5EBB002396A8 /* ItemSearchResultSet.swift */; };
+		8D197833247E696C002396A8 /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D197832247E696C002396A8 /* ItemTableViewCell.swift */; };
+		8D197835247E6BB0002396A8 /* SearchItemTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D197834247E6BB0002396A8 /* SearchItemTableViewController.swift */; };
+		8D197837247E8592002396A8 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D197836247E8592002396A8 /* WebViewController.swift */; };
+		8DE13D47247F5388006FC736 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DE13D46247F5388006FC736 /* WebKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8D197817247E49B3002396A8 /* 004-MySearchApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "004-MySearchApp.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D19781A247E49B3002396A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8D19781C247E49B3002396A8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8D19781E247E49B3002396A8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8D197821247E49B3002396A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8D197823247E49B5002396A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8D197826247E49B5002396A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8D197828247E49B5002396A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D19782E247E5EBB002396A8 /* ItemSearchResultSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemSearchResultSet.swift; sourceTree = "<group>"; };
+		8D197832247E696C002396A8 /* ItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
+		8D197834247E6BB0002396A8 /* SearchItemTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchItemTableViewController.swift; sourceTree = "<group>"; };
+		8D197836247E8592002396A8 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		8DE13D46247F5388006FC736 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8DE13D47247F5388006FC736 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +51,7 @@
 			children = (
 				8D197819247E49B3002396A8 /* 004-MySearchApp */,
 				8D197818247E49B3002396A8 /* Products */,
+				8DE13D45247F5388006FC736 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,13 +68,24 @@
 			children = (
 				8D19781A247E49B3002396A8 /* AppDelegate.swift */,
 				8D19781C247E49B3002396A8 /* SceneDelegate.swift */,
-				8D19781E247E49B3002396A8 /* ViewController.swift */,
 				8D197820247E49B3002396A8 /* Main.storyboard */,
+				8D197834247E6BB0002396A8 /* SearchItemTableViewController.swift */,
+				8D19782E247E5EBB002396A8 /* ItemSearchResultSet.swift */,
+				8D197832247E696C002396A8 /* ItemTableViewCell.swift */,
+				8D197836247E8592002396A8 /* WebViewController.swift */,
 				8D197823247E49B5002396A8 /* Assets.xcassets */,
 				8D197825247E49B5002396A8 /* LaunchScreen.storyboard */,
 				8D197828247E49B5002396A8 /* Info.plist */,
 			);
 			path = "004-MySearchApp";
+			sourceTree = "<group>";
+		};
+		8DE13D45247F5388006FC736 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8DE13D46247F5388006FC736 /* WebKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +159,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D19781F247E49B3002396A8 /* ViewController.swift in Sources */,
+				8D19782F247E5EBB002396A8 /* ItemSearchResultSet.swift in Sources */,
+				8D197833247E696C002396A8 /* ItemTableViewCell.swift in Sources */,
 				8D19781B247E49B3002396A8 /* AppDelegate.swift in Sources */,
+				8D197837247E8592002396A8 /* WebViewController.swift in Sources */,
+				8D197835247E6BB0002396A8 /* SearchItemTableViewController.swift in Sources */,
 				8D19781D247E49B3002396A8 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
