@@ -6,7 +6,6 @@
 //  Copyright © 2020 Takatoshi Miura. All rights reserved.
 //
 
-import Foundation
 
 //検索結果全体を格納するクラス
 class ItemSearchResultSet: Codable {
